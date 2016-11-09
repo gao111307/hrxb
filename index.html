@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		li{
+			list-style-type: none;
+			display:  inline-block;
+			line-height:50px;
+		}
+	</style>
+</head>
+<body>
+	<div style="width:300px;height:500px;border:1px solid red;margin:auto;margin-top:30px; ">
+		<form action="./changeFile.php" method="post">
+			<ul>
+				<li><h2>导入试题类型选项卡</h2></li>
+				<li>转换文件：<input type="file" name="in_name"></li>
+				<li>题&emsp;&emsp;&emsp;型：
+					选择<input type="radio" name="type" value="1">
+					编程<input type="radio" name="type" value="5">
+					问答<input type="radio" name="type" value="4" checked></li>
+				<li>知&nbsp;识&nbsp;点：<input type="text" name="konw_id"></li>
+				<li>难&nbsp;度&nbsp;值：<input type="text" name="diff_num"></li>
+				<li>导出文件名：<input type="text" name="out_name" value="out.txt"></li>
+				<li><input type="submit" value="提交"></li>
+			</ul>	
+		</form>
+	</div>
+</body>
+</html>
